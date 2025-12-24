@@ -22,11 +22,11 @@ r --> Cantidad de piezas para colocarlas en el tablero
     4 --> “Se coloca los Alfiles, Rey y Reina”
     6 --> “Se coloca los Caballos, Alfiles, Rey y Reina”
     8 --> “Se colocan las Torres, Caballos, Alfiles, Rey y Reina”
-    10 --> “Se colocan los peones”
+    10 --> “Se colocan los peones” 
     16 --> “Se colocan todas las piezas”
 s --> Tiempo de espera entre el ordenamiento
     argumentos validos
-    100 - 1000
+    100 - 1000 
 Ejemplo:
 
 a=q t=n c=b r=10 s=100
@@ -214,7 +214,7 @@ direction BT
 	    + checkNumber(InputParametersCli, String) String
 	    + checkCharacter(InputParametersCli, String) String
     }
-
+    
  	<<enumeration>> InputParametersCli
 
     BishopPiece --|> AbstractPiece
@@ -238,7 +238,7 @@ direction BT
     SetterInputCLI ..>  ControllerChess
     SingletonChessBoard --> ControllerChess
     Main <-- ControllerChess
-    ControllerChess  <.. AlgorithmFactory
+    ControllerChess  <.. AlgorithmFactory 
     Constants ..> SetterInputCLI
     AlgorithmFactory o-- BubbleSort
     AlgorithmFactory o-- InsertionSort
@@ -256,9 +256,9 @@ direction BT
     ConfigurationsChess -->  ControllerChess
     InputParametersCli ..> SetterInputCLI
     FactoryPiece ..> ControllerChess
-    EmptyPiece --> SingletonChessBoard
+    EmptyPiece --> SingletonChessBoard 
 ```
-## DIAGRAMA DE CLASES
+## DIAGRAMA DE CLASES 
 ![](img/Chess-DiagramClass.png)
 
 ## EJECUCIÓN
