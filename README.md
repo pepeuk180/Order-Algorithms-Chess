@@ -33,7 +33,7 @@ a=q t=n c=b r=10 s=100
 ```
 ## CÓDIGO MERMAID
 ```
----
+---startuml
 config:
   look: classic
   layout: elk
